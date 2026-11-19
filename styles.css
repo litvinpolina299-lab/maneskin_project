@@ -175,3 +175,153 @@ body {
     color: #D1CFCF;
     padding-top: 0;
 }
+
+/* ЛР3: Блок 1 (Screenshots) */
+.screenshots-section {
+    background-color: #ffffff;
+    padding: 60px 80px;
+    border-top: 4px solid #5C1D24;
+}
+
+.screenshots-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #5C1D24;
+    text-align: center;
+    margin: 0 0 40px 0;
+    font-weight: 900;
+}
+
+.screenshots-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 35px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.screenshot-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+}
+
+.screenshot-image {
+    width: 200px;
+    height: 200px;
+    background-color: #000033;
+    flex-shrink: 0;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0, 0, 51, 0.2);
+}
+
+.screenshot-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.screenshot-text h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #000033;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+}
+
+.screenshot-text p {
+    margin: 0;
+    font-size: 14.5px;
+    line-height: 1.55;
+    color: #3B3B3F;
+}
+
+/* ЛР3: Блок 2 (Reviews) */
+.reviews-section {
+    background-color: #EBE9EC;
+    padding: 60px 80px;
+    border-top: 4px solid #000033;
+}
+
+.reviews-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #000033;
+    text-align: center;
+    margin: 0 0 40px 0;
+    font-weight: 900;
+}
+
+.reviews-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.review-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+}
+
+.review-avatar {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color:rgb(255, 255, 255)
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 3px solid #8C2332;
+}
+
+.review-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.review-bubble {
+    position: relative;
+    background-color: #ffffff;
+    padding: 18px 22px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    flex: 1;
+}
+
+/* Декоративний трикутник зліва від блоку відгуку */
+.review-bubble::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: -12px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 12px solid #ffffff;
+}
+
+.review-quote {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.5;
+    color: #333333;
+}
+
+.review-author {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #8C2332;
+}
